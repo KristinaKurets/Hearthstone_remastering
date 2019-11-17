@@ -1,0 +1,58 @@
+﻿[
+  {
+    "Name": "Acidic Swamp Ooze",
+    "Health": 3,
+    "Damage": 2
+  },
+  {
+    "Name": "Sindorai priest",
+    "Health": 2,
+    "Damage": 3
+  },
+  {
+    "Name": "Frosty yeti",
+    "Health": 5,
+    "Damage": 4
+    //"Handler": {
+    //  "HandlerType": 2,
+    //  "Description": "Zombie tries to pull you to his grave",
+    //  "Damage": 2
+    //}
+  },
+  {
+    "Name": "Heavy fist ogre",
+    "Health": 7,
+    "Damage": 6
+  },
+  {
+    "Name": "Bloodmarsh Raptor",
+    "Health": 3,
+    "Damage": 2
+  },
+  {
+    "Name": "Water Elemental",
+    "Health": 6,
+    "Damage": 3
+  },
+  {
+    "Name": "Hero of Stormwind",
+    "Health": 6,
+    "Damage": 6
+  },
+  {
+    "Name": "Gurubashi Berserker",
+    "Health": 7,
+    "Damage": 3
+  },
+  {
+    "Name": "Inventor-gnome",
+    "Health": 4,
+    "Damage": 2
+  },
+  {
+    "Name": "Shield Bearer Sen'jin",
+    "Health": 5,
+    "Damage": 3
+  }
+
+]

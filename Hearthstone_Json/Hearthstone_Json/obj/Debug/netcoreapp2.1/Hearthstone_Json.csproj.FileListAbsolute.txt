@@ -1,0 +1,25 @@
+C:\Users\user\source\repos\Hearthstone_Json\Hearthstone_Json\bin\Debug\netcoreapp2.1\Hearthstone_Json.deps.json
+C:\Users\user\source\repos\Hearthstone_Json\Hearthstone_Json\bin\Debug\netcoreapp2.1\Hearthstone_Json.runtimeconfig.json
+C:\Users\user\source\repos\Hearthstone_Json\Hearthstone_Json\bin\Debug\netcoreapp2.1\Hearthstone_Json.runtimeconfig.dev.json
+C:\Users\user\source\repos\Hearthstone_Json\Hearthstone_Json\bin\Debug\netcoreapp2.1\Hearthstone_Json.dll
+C:\Users\user\source\repos\Hearthstone_Json\Hearthstone_Json\obj\Debug\netcoreapp2.1\Hearthstone_Json.csprojAssemblyReference.cache
+C:\Users\user\source\repos\Hearthstone_Json\Hearthstone_Json\obj\Debug\netcoreapp2.1\Hearthstone_Json.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Hearthstone_Json\Hearthstone_Json\obj\Debug\netcoreapp2.1\Hearthstone_Json.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\Hearthstone_Json\Hearthstone_Json\obj\Debug\netcoreapp2.1\Hearthstone_Json.AssemblyInfo.cs
+C:\Users\user\source\repos\Hearthstone_Json\Hearthstone_Json\bin\Debug\netcoreapp2.1\Hearthstone_Json.pdb
+C:\Users\user\source\repos\Hearthstone_Json\Hearthstone_Json\obj\Debug\netcoreapp2.1\Hearthstone_Json.dll
+C:\Users\user\source\repos\Hearthstone_Json\Hearthstone_Json\obj\Debug\netcoreapp2.1\Hearthstone_Json.pdb
+C:\Users\user\source\repos\Hearthstone_Json\Hearthstone_Json\bin\Debug\netcoreapp2.1\Deck1.json
+C:\Users\user\source\repos\Hearthstone_Json\Hearthstone_Json\bin\Debug\netcoreapp2.1\Deck2.json
+C:\Users\a.kurets\Desktop\Крис прожка\Hearthstone_Json\Hearthstone_Json\bin\Debug\netcoreapp2.1\Deck1.json
+C:\Users\a.kurets\Desktop\Крис прожка\Hearthstone_Json\Hearthstone_Json\bin\Debug\netcoreapp2.1\Deck2.json
+C:\Users\a.kurets\Desktop\Крис прожка\Hearthstone_Json\Hearthstone_Json\bin\Debug\netcoreapp2.1\Hearthstone_Json.deps.json
+C:\Users\a.kurets\Desktop\Крис прожка\Hearthstone_Json\Hearthstone_Json\bin\Debug\netcoreapp2.1\Hearthstone_Json.runtimeconfig.json
+C:\Users\a.kurets\Desktop\Крис прожка\Hearthstone_Json\Hearthstone_Json\bin\Debug\netcoreapp2.1\Hearthstone_Json.runtimeconfig.dev.json
+C:\Users\a.kurets\Desktop\Крис прожка\Hearthstone_Json\Hearthstone_Json\bin\Debug\netcoreapp2.1\Hearthstone_Json.dll
+C:\Users\a.kurets\Desktop\Крис прожка\Hearthstone_Json\Hearthstone_Json\bin\Debug\netcoreapp2.1\Hearthstone_Json.pdb
+C:\Users\a.kurets\Desktop\Крис прожка\Hearthstone_Json\Hearthstone_Json\obj\Debug\netcoreapp2.1\Hearthstone_Json.csprojAssemblyReference.cache
+C:\Users\a.kurets\Desktop\Крис прожка\Hearthstone_Json\Hearthstone_Json\obj\Debug\netcoreapp2.1\Hearthstone_Json.AssemblyInfoInputs.cache
+C:\Users\a.kurets\Desktop\Крис прожка\Hearthstone_Json\Hearthstone_Json\obj\Debug\netcoreapp2.1\Hearthstone_Json.AssemblyInfo.cs
+C:\Users\a.kurets\Desktop\Крис прожка\Hearthstone_Json\Hearthstone_Json\obj\Debug\netcoreapp2.1\Hearthstone_Json.dll
+C:\Users\a.kurets\Desktop\Крис прожка\Hearthstone_Json\Hearthstone_Json\obj\Debug\netcoreapp2.1\Hearthstone_Json.pdb
