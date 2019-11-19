@@ -14,13 +14,14 @@ namespace Hearthstone_Json
 
         public void CreatePlayer(Player player, string path)
         {
-            var deck = new DeckService();
+            var deck = new GameService();
             player.Deck = deck.CreateDeck(path);
             player.Hp = 30;
             player.Hand = player.Deck.GetRange(0, 3);
             player.Deck.RemoveRange(0, 3);
             player.Table = new List<Card>();
         }
+       
         public void AddMinion(Player player)
         {
             player.Hand.Add(player.Deck[0]);
@@ -42,7 +43,6 @@ namespace Hearthstone_Json
                     break;
                 }
             }
-
         }
 
         public void AddRandomMinion(Player player)
@@ -55,9 +55,96 @@ namespace Hearthstone_Json
             Thread.Sleep(1000);
             Console.WriteLine($"\nAi chose {player.Hand[ind].Name}, {player.Hand[ind].Damage}/{player.Hand[ind].Health}. It's on his table. \n\nYour turn!");
             player.Hand.RemoveAt(ind);
+        }
+        
+        public void ChooseTargetAndAttack(Player player, Player Ai)
+        {
+            Console.WriteLine("\nIt's time to attack");
+            for (int i = 0; i < player.Table.Count; i++)
+            {
+                Console.WriteLine($"You have to choose a target to attack with {player.Table[i].Name}, {player.Table[i].Damage}/{player.Table[i].Health}:");
+                for (int s = 0; s < Ai.Table.Count; s++)
+                {
+                    Console.WriteLine($"{s + 1} - {Ai.Table[s].Name}, {Ai.Table[s].Damage}/{Ai.Table[s].Health}");
+                }
+                Console.WriteLine($"{Ai.Table.Count + 1} - go to face. Now Ai has {Ai.Hp} HP");
+                int attacked = int.Parse(Console.ReadLine());
+                if (attacked == Ai.Table.Count + 1)
+                {
+                    Ai.Hp -= player.Table[i].Damage;
+                    Console.WriteLine($"You decided go to enemy face. Now Ai has {Ai.Hp} HP");
+                    if (Ai.Hp <= 0)
+                    {
+                        Console.WriteLine("You won!");
+                        break;
+                    }
+                }
+                else if (attacked <= Ai.Table.Count)
+                {
+                    Console.WriteLine($"{player.Table[i].Name}, {player.Table[i].Damage}/{player.Table[i].Health} attacks {Ai.Table[attacked - 1].Name}, {Ai.Table[attacked - 1].Damage}/{Ai.Table[attacked - 1].Health}!");
+                    Ai.Table[attacked - 1].Health -= player.Table[i].Damage;
+                    player.Table[i].Health -= Ai.Table[attacked - 1].Damage;
+                    if (Ai.Table[attacked - 1].Health <= 0)
+                    {
+                        Console.WriteLine($"Oh no, {Ai.Table[attacked - 1].Name} is dead!");
+                        Ai.Table.RemoveAt(attacked - 1);
+                    }
+                    if (player.Table[i].Health <= 0)
+                    {
+                        Console.WriteLine($"Oh no, {player.Table[i].Name} is dead!");
+                        player.Table.RemoveAt(i);
+                    }
+                }
+                if (Ai.Hp <= 0)
+                {
+                    Console.WriteLine("Player won!");
+                    break;
+                }
+            }
+        }
+        
+        public void Attack(Player Ai, Player player)
+        {
+            if (Ai.Table.Count != 0)
+            {
+                Console.WriteLine("Ai attacks!");
+                Thread.Sleep(700);
+                for (int i = 0; i < Ai.Table.Count; i++)
+                {
+                    for (int j = 0; j < player.Table.Count; j++)
+                    {
+                        if (Ai.Table[i].Damage >= player.Table[j].Health)
+                        {
+                            Console.WriteLine($"{Ai.Table[i].Name} attacks your {player.Table[j].Name}!");
+                            player.Table[j].Health -= Ai.Table[i].Damage;
+                            Ai.Table[i].Health -= player.Table[j].Damage;
 
+                            if (Ai.Table[i].Health <= 0)
+                            {
+                                Console.WriteLine($"Oh no, {Ai.Table[i].Name} is dead!");
+                                Ai.Table.Remove(Ai.Table[i]);
+                            }
+                            if (player.Table[j].Health <= 0)
+                            {
+                                Console.WriteLine($"Oh no, {player.Table[j].Name} is dead!");
+                                player.Table.Remove(player.Table[j]);
+                            }
+                        }
+                        else
+                        {
+                            player.Hp -= Ai.Table[i].Damage;
+                            Console.WriteLine($"{Ai.Table[i].Name} goes to your face! Now you have {player.Hp} HP.");
+                            break;
+                        }
+                    }
+                    if (player.Hp == 0)
+                    {
+                        Console.WriteLine("Player is dead! You won!");
+                        break;
+                    }
+                }
+            }
+            else Console.WriteLine("There are no minions on Ai's table.");
         }
     }
-
-    
 }
