@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Hearthstone_Json
 {
-    public class DeckService
+    public class GameService
     {
         public List<Card> CreateDeck (string path)
         {
